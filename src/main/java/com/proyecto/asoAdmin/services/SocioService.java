@@ -33,7 +33,7 @@ public class SocioService {
         Socio socio = socioRepository.findById(idSocio)
                 .orElseThrow(() -> new RuntimeException("Socio no encontrado"));
 
-        socio.setTSocio(nuevoTipo); // Usamos Setter
+        socio.setTipoSocio(nuevoTipo); // Usamos Setter
         Socio actualizado = socioRepository.save(socio);
 
         if (socio.isRecibeNotificaciones()) {

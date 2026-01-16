@@ -9,7 +9,7 @@ import java.util.List;
 
 @Repository
 public interface SocioRepository extends JpaRepository<Socio, Long> {
-    List<Socio> findByTSocio(TipoSocio tSocio);
+    List<Socio> findByTipoSocio(TipoSocio tipoSocio);
 
     List<Socio> findByNombreContainingIgnoreCase(String nombre);
 

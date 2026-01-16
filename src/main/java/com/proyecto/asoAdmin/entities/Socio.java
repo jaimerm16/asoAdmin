@@ -25,7 +25,7 @@ public class Socio {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "t_socio")
-    private TipoSocio tSocio;
+    private TipoSocio tipoSocio;
 
     @Column(unique = true, nullable = false)
     private String email;
